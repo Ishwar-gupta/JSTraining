@@ -215,4 +215,78 @@ if(rem == 5)
 }
 }
 console.log("Count of digit 5 is : " + (count));
+
+/******************************************************************************************* */
+/*   task 1:
+take a number from input & multiply all it's digits repeatedly until 
+result becomes a single digit using do while loop
+ */
+/*
+let num=Number(prompt("Enter number:")) ;
+let sum;
+while (num > 9){
+
+    sum=0
+    while ( num != 0 ){
+       
+        sum=sum+ num  % 10;
+        num=Math.floor(num/10);
+    }
+num=sum
+}
+console.log(num);
 */
+
+
+/*   task 2:
+find  the first digit from right that is not 7 using do while loop
+ */
+
+/*
+let num = Number(prompt("Enter number:"));
+let rem;
+
+do {
+    rem = num % 10;             // Get the last digit
+    if (rem !== 7) {
+        console.log(rem);       // Print the digit if it's not 7
+        break;                  // Exit the loop
+    }
+    num = Math.floor(num / 10); // Remove the last digit
+} while (num !== 0);
+*/
+
+/*   task 3:
+find the digit(0-9)that occurs most frequently in the number using do while loop
+Input: 887928387
+Output: 8(Appears 4 times)
+ */
+
+
+/*   task 4:
+program to check is a string is palindrom or not using do while loop
+ */
+
+/*   task 5:
+count the no of vowels and consonants in a word using do....while /while loop
+ */
+let word = prompt("Enter a word:").toLowerCase(); // Normalize to lowercase
+let vowels = "aeiou";
+let vowelCount = 0;
+let consonantCount = 0;
+let i = 0;
+
+do {
+    let ch = word[i];
+    if (/[a-z]/.test(ch)) { // Check if it's a letter
+        if (vowels.includes(ch)) {
+            vowelCount++;
+        } else {
+            consonantCount++;
+        }
+    } 
+    i++;
+} while (i < word.length);
+
+console.log(`Vowels: ${vowelCount}`);
+console.log(`Consonants: ${consonantCount}`);
