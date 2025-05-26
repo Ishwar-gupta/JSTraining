@@ -27,7 +27,7 @@ for(let i=0;i<=num;i++){
 console.log("the sum of first n whole number is:"  +sum);
 
 */
-
+/*
 let num = Number(prompt("enter number:"));
 let prod=1;
 for(let i=0;i<num;i++){
@@ -36,6 +36,46 @@ for(let i=0;i<num;i++){
     prod=prod * (i+1)   ;
 }
 console.log(prod);
+*/
+/*
+for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+        console.log("* ");
+    }
+    console.log("\n");
+}
+   
+//OR
 
-
-
+for(let i=1;i<=5;i++){
+    let star = "";
+    for(let j=1;j<=i;i++){
+        star=star + "*"        ;
+    }
+    console.log(star);
+}
+output:
+*
+**
+***
+****
+*****
+*/
+/*
+for(let i=1;i<=5;i++){
+    let star = "";
+    for(let j=1;j<=i;j++){
+        star=star + j;        ;
+    }
+    console.log(star);
+}
+*/
+/*
+//let num=Number(prompt("Enter any number"));
+for(let i=1;i<=50;i++){
+    if(i % 4 == 0){
+        continue;
+    }else{
+        console.log(i);
+    }
+}*/
