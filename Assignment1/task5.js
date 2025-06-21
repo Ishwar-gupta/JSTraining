@@ -22,11 +22,10 @@ the value is falsy(via alert);
 
 
 let input = prompt("Enter the value : ");
-let number = Number(input)
-if(input == 0 || input == null || input == "" || isNaN(number)  || input == false)
-{
-    alert("falsy value ! ");
+
+if(input){
+    alert("The value is Truthy  ! ");
 }else
 {
-    alert("truthy value ! ");
+    alert("The value is Falsy ! ");
 }
