@@ -17,17 +17,21 @@ Expected Input:
 Expected Output:
 type is boolean (via alert);
  */
-let input=prompt("Enter the number:");
-if(input){
-    alert("this is Boolean type.");//when input is true or false
+
+//taking input from user
+let input=prompt("Enter any value:");
+
+let result;//it just check the type
+if(input === "true" || input === "false"){
+    result="the type is Boolean";//when input is true or false
 }else if(input == ""){
-    alert("this is undefined ");//when we click Ok button only it will print undefined
-}else if(input == null){
-    alert("this is null type:");//when we click cancel button only it will print null
+    result="the type is undefined ";//when we click Ok button only it will print undefined
+}else if(input == "null"){
+    alert("the type is null ");//when we click cancel button only it will print null
+}else if(!isNaN(Number(input))){
+    result="the type is Number";
 }else{
-    alert("invalid!!!");
+    result="the type is unknown";
 }
-
-
-console.log(typeof typeof 9);
-//this will give string as output because single typeof give number as output and number is string
+//showing the result using alert
+alert(result);
