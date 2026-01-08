@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3 To-Do List</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            /* background-color: red; */
+            max-width: 35rem;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.248);
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 10px;
+        }
+        .addContainer{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+        .addContainer > input{
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.368); 
+            width: 100%;
+            border-radius: 5px;
+        }
+        .addContainer > button{
+            padding: 0 15px;
+            background-color: lightseagreen;
+            border-radius: 5px;
+            border: none;
+            transition:  all linear 0.3s;
+        }
+        .addContainer > button:active{
+            scale: 0.8;
+        }
+        .listContainer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .listContainer .list{
+            width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           background-color: aliceblue;
+           padding: 12px;
+           border-radius: 5px;
+        }
+        .listContainer .deleteBtn{
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Simple To-Do List App</h1>
+        <div class="addContainer">
+            <input id="addInput" type="text" placeholder="Add a new task 🖊️ ">
+            <button class="addBtn">Add Task </button>
+        </div>
+    
+        <div class="listContainer">
+            
+         </div>
+    </div>
+
+    <script src="./scriptp3.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poject 1 : JavaScript</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: rgb(248, 212, 168);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+        .inputBtnContainer{
+            margin: 10px 0;
+        }
+        .heading{
+            background-color: white;
+            width: fit-content;
+            padding: 10px;
+            border-radius:5px;
+            font-size: 28px;
+            border: 1px solid black;
+            background: linear-gradient(
+                to right, rgb(11, 250, 250), rgba(255,0,0,1));
+        }
+        button{
+            background-color: rgb(11, 250, 250);
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: all linear 0.2s;
+            border: 1px solid black;
+        }
+        button:active{
+            scale: 0.8;
+        }
+        .inputBtnContainer{
+            margin: 10px 0;
+            display: flex;
+            gap: 1rem;
+    
+        }
+        #colorInput{
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: larger;
+            border: 1px solid black;
+            
+        }
+        .currentColor{
+            font-size: 18px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Color Changer</h1>
+        <div class="inputBtnContainer">
+            <button class="randomBtn">Random Color</button>
+            <input type="text" id="colorInput" placeholder="Enter a color or hex(e.g white or #ffffff)">
+            <button class="applyBtn">Apply Color</button>
+        </div>
+        <p class="currentColor">
+            Current Color: 
+                <span class="currentColorValue">Green</span>
+        </p>
+
+    </div>
+    <script src="./scriptp1.js"></script>
+</body>
+</html>
