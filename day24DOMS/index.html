@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMS</title>
+    <style>
+        .formdemo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: 2px solid black;
+            margin-top: 10% ;
+            margin-left: 35%;
+            padding: 10px;
+            height: 30vh;
+            width: 50vh;
+            
+        }
+        label{
+            color: navy;
+        }
+        input{
+            background-color: aqua;
+        }
+        button{
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+        #outputBox{
+            border: 2px solid black;
+            background-color: aquamarine;
+            height: 200px;
+            width: 250px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            margin-left: 35%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formdemo">
+        <form method="post" action="">
+            <label for="name">Name:</label>
+            <input id="formName" type="name" placeholder="Enter your name:" required><br><br>
+            <label for="age">Age:&nbsp;&nbsp;</label>
+            <input id="formAge" type="number" placeholder="Enter your age" required><br><br>
+            <label for="address">Address:</label>
+            <input id="formAddress" type="address" placeholder="Enter your address:" required><br>
+            <button  value="Submit" id="submitForm">Submit</button>
+        </form>
+    </div>
+    <div id="outputBox" > </div>
+    <script src="./scriptDoms.js"></script>
+</body>
+</html>

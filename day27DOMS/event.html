@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+        .container{
+            max-width: 250x;
+            max-height: 250x;
+            overflow: hidden;
+        }
+        #title{
+            margin: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+<!-- button is event source
+    <button id="submit" type="submit">Click me</button> 
+     Number1: <input id="num1" type="number" placeholder="Enter number1"><br>
+     Number2: <input id="num2" type="number" placeholder="Enter number2"><br>
+     <button id="Submit" type="submit">Click Me</button>
+     <p id="result">Result:</p> -->
+    <div class="container">
+       <div class="img" style="overflow: hidden;">
+         <img src="./bg1.jpg" id="image"  alt="Error: loading Image">
+       </div>
+       <p id="title">This is a bag</p>
+    </div>
+    <script src="./event.js"></script>
+</body>
+</html>

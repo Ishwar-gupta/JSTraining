@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating To-Do List</title>
+    <style>
+        body{
+            /* display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; */
+            margin-top: 10%;
+        }
+        .todoList{
+            height: 250px;
+            width: 250px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px 4px 2px black;
+        }
+        input{
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid blue;
+            font-size: 10px;
+        }
+        button{
+            padding: 10px 30px;
+            margin-left: 30px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="todoList">
+        <form action="" method="post">
+            <!-- <input type="password" placeholder="Password" id="pwd">
+            <input type="checkbox" onclick="pwd.type=this.checked ?'text':'password'"> -->
+            <input type="text" placeholder="Add a new task" id="inputBox"><br>
+            <button id="submitBtn" type="submit">Add Task</button>
+        </form>
+        <ul id="listItem">
+
+        </ul>
+    </div>
+    <script src="./toDoList.js"></script>
+</body>
+</html>

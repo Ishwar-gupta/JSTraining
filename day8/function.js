@@ -172,10 +172,19 @@ function mul(a , b){
 function div(a , b){
     return a/b;
 }
+<<<<<<< HEAD
 function higherFunction( a , b , helper){
     return helper(a,b);
 }
 let helper = prompt("Enter your function name:");
 
  let res = higherFunction(10,5,helper);
+=======
+function higherFunction( a , b , sub){
+    return sub(a,b);
+}
+let helper = prompt("Enter your function name:");
+
+ let res = higherFunction(10,5,sub);
+>>>>>>> Sid
  console.log(res);
